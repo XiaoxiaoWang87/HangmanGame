@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <body>
+
+      <p><font size="4"><b>Welcome to the game, Hangman!</b></font></p>
+
+      {% for e in result['animation'] %}
+          <p>{{e}}</p>
+      {% endfor %}
+
+      <form action = "/start" method = "POST">
+	      <input type= "submit" name="newGame" value="Start a New Game">
+      </form>
+      <p>I am thinking of a word that is <font size="4"><b> {{result['secretWordLen']}} letters </b></font> long.</p>
+      
+      <form action= "/play" method="POST">
+	     Guess a letter: 
+	     <input type= "text" name= "aGuess"/><br/>
+	     <input type= "submit" style= "display:none"/>
+      </form>
+      
+      {% for e in result['message'] %}
+          <p>{{e}}</p>
+      {% endfor %}
+
+   </body>
+</html>
