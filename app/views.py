@@ -114,6 +114,7 @@ def start():
                                Markup(''.join(['&nbsp;'] * 35) + '|||'), 
                                Markup(''.join(['&nbsp;'] * 35) + '|||'), 
                                Markup(''.join(['&nbsp;'] * 35) + '|||'), 
+                               Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
            
         return render_template("start.html", result = result)
@@ -171,58 +172,64 @@ def play():
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
+                                   Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
         elif idx == 1:
             result['animation'] = [Markup(''.join(['&nbsp;'] * 19) + '++ - - - - ++'),
-                                   Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
         elif idx == 2:
             result['animation'] = [Markup(''.join(['&nbsp;'] * 19) + '++ - - - - ++'),
-                                   Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
         elif idx == 3:
             result['animation'] = [Markup(''.join(['&nbsp;'] * 19) + '++ - - - - ++'),
+                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
-                                   Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 2) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
         elif idx == 4:
             result['animation'] = [Markup(''.join(['&nbsp;'] * 19) + '++ - - - - ++'),
+                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
-                                   Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 2) + '|' + ''.join(['&nbsp;'] * 2) + '\\' + ''.join(['&nbsp;'] * 10) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 2) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
         elif idx == 5:
             result['animation'] = [Markup(''.join(['&nbsp;'] * 19) + '++ - - - - ++'),
+                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 2) + '|' + ''.join(['&nbsp;'] * 2) + '\\' + ''.join(['&nbsp;'] * 10) +  '|||'),
-                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
         elif idx == 6:
             result['animation'] = [Markup(''.join(['&nbsp;'] * 19) + '++ - - - - ++'),
+                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 2) + '|' + ''.join(['&nbsp;'] * 2) + '\\' + ''.join(['&nbsp;'] * 10) +  '|||'),
-                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 16) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
         elif idx == 7:
             result['animation'] = [Markup(''.join(['&nbsp;'] * 19) + '++ - - - - ++'),
+                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 20) + 'O' + ''.join(['&nbsp;'] * 12) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 2) + '|' + ''.join(['&nbsp;'] * 2) + '\\' + ''.join(['&nbsp;'] * 10) +  '|||'),
-                                   Markup(''.join(['&nbsp;'] * 21) + '|' + ''.join(['&nbsp;'] * 13) +  '|||'),
                                    Markup(''.join(['&nbsp;'] * 18) + '/'+ ''.join(['&nbsp;'] * 5) + '\\' + ''.join(['&nbsp;'] * 10) +  '|||'),
+                                   Markup(''.join(['&nbsp;'] * 35) + '|||'),
                                    Markup(''.join(['&nbsp;'] * 10) + '= = = = = = = = =')]
-        elif idx == 7:
-            result['animation'] = [''] 
 
 
         return render_template("start.html", result = result)
