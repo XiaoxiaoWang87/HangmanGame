@@ -141,7 +141,7 @@ def play():
             if guessInLowerCase in lettersGuessed:
                 message.append("You've already guessed that letter: " + getGuessedWord(secretWord, lettersGuessed))
             elif len(guessInLowerCase) != 1 or guessInLowerCase.isalpha() == False:
-                message.append("You did not enter a letter.")
+                message.append("You did not enter a letter. " + getGuessedWord(secretWord, lettersGuessed))
             else:
                 lettersGuessed.append(guessInLowerCase)
 
