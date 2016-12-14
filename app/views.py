@@ -140,7 +140,7 @@ def play():
 
             if guessInLowerCase in lettersGuessed:
                 message.append("You've already guessed that letter: " + getGuessedWord(secretWord, lettersGuessed))
-            elif len(guessInLowerCase) != 1:
+            elif len(guessInLowerCase) != 1 or guessInLowerCase.isalpha() == False:
                 message.append("You did not enter a letter.")
             else:
                 lettersGuessed.append(guessInLowerCase)
@@ -153,7 +153,7 @@ def play():
                 
             # Only print the remaining guesses when not running out of guesses and not having guessed the word already 
             if idx <= 7 and isWordGuessed(secretWord, lettersGuessed) == False:
-                message.append(Markup('You have ' + '<font size="4"><b>' + str(8 - idx) + ' guesses' + '</font></b>' + ' left.'))
+                message.append(Markup('You have ' + '<font size="4" color="blue"><b>' + str(8 - idx) + ' guesses' + '</font></b>' + ' left.'))
 
         if isWordGuessed(secretWord, lettersGuessed) == True:
             message.append(Markup('<font size="4" color="green"><b>' + "Congratulations, you won!!" + '</font></b>'))
